@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de HTML Semântico</title>
+</head>
+<body>
+
+    <!-- Cabeçalho com título principal e navegação -->
+    <header>
+        <h1>Desafio de HTML Semântico</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção com título, parágrafo e listas -->
+        <section id="inicio">
+            <h2>Bem-vindo ao Desafio</h2>
+            <p>Esta página foi criada para demonstrar o uso de HTML semântico, listas e formulários interativos.</p>
+            
+            <h3>Coisas a fazer:</h3>
+            <!-- Lista ordenada -->
+            <ol>
+                <li>Aprender HTML semântico</li>
+                <li>Criar listas ordenadas e não ordenadas</li>
+                <li>Construir formulários interativos</li>
+            </ol>
+
+            <h3>Ferramentas necessárias:</h3>
+            <!-- Lista não ordenada -->
+            <ul>
+                <li>Editor de texto</li>
+                <li>Navegador</li>
+                <li>Internet</li>
+            </ul>
+        </section>
+
+        <!-- Formulário interativo -->
+        <section id="formulario">
+            <h2>Formulário de Cadastro</h2>
+            <form action="#" method="POST">
+                <!-- Grupo de campos com nome e email -->
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required><br>
+                    <!-- Campo de senha -->
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha" name="senha" required><br>
+                </fieldset>
+
+                <!-- Campos de escolha (radio e checkbox) -->
+                <fieldset>
+                    <legend>Preferências</legend>
+                    <p>Você prefere aprender:</p>
+                    <label>
+                        <input type="radio" name="aprendizado" value="html" required> HTML
+                    </label>
+                    <label>
+                        <input type="radio" name="aprendizado" value="css"> CSS
+                    </label>
+                    <label>
+                        <input type="radio" name="aprendizado" value="javascript"> JavaScript
+                    </label>
+                    <label>
+                        <input type="radio" name="aprendizado" value="python"> Python
+                    </label><br>
+
+                    <label>
+                        <input type="checkbox" name="todas"> Deseja apreender todas essas tecnologias?
+                    </label><br>
+                </fieldset><br>
+
+                
+
+                <!-- Menu de seleção -->
+                <label for="pais">País:</label>
+                <select id="pais" name="pais">
+                    <option value="brasil">Brasil</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="estados-unidos">Estados Unidos</option>
+                </select><br><br>
+
+                <!-- Botão de envio -->
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Informações adicionais no aside -->
+    <aside>
+        <h3>Visite minhas redes sociais</h3>
+        <ul>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+    </aside>
+
+    <!-- Rodapé com informações de copyright -->
+    <footer>
+        <p>&copy; 2024 Alanna Monteiro. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
